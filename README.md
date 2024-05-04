@@ -40,8 +40,37 @@ https://github.com/pavankumarmuppuri/Netflix-Clone/assets/155610590/2e4add6b-10a
 
 ## Features
 
-- **User Authentication**: Users can sign in, register, and log out securely.
-- **Superuser Privileges**: Superusers have additional privileges such as managing users.
-- **Database Integration**: Uses PostgreSQL database for storing user data.
-- **Restricted Access to Movies**: Movie access is limited to logged-in users only. Only authenticated users can access and watch movies, ensuring a secure and personalized viewing experience.
+1. **User Authentication**: Users can sign in, register, and log out securely.
+2. **Superuser Privileges**: Superusers have additional privileges such as managing users.
+3. **Database Integration**: Uses PostgreSQL database for storing user data.
+4. **Restricted Access to Movies**: Movie access is limited to logged-in users only. Only authenticated users can access and watch movies, ensuring a secure and personalized viewing experience.
 
+## Steps to run the project in your PC
+### Database Setup
+
+1. **Create a PostgreSQL Database**: Create a PostgreSQL database named `ott` (or a name of your choice).
+
+2. **Update Database URI**: Update the database URI in the Flask app configuration (`app.config['SQLALCHEMY_DATABASE_URI']`) to point to your local database.<br> Modify the following line in `app.py`:
+
+   app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@localhost/database_name'
+
+   
+### Running the Application
+
+<b>To run the Flask application, execute the following command:</b>
+
+python app.py
+The application should now be running locally. You can access it by navigating to http://localhost:5000 in your web browser.
+
+### Usage
+
+1. Sign in with existing credentials or register as a new user to access the movie page.
+2. Superusers have additional features to manage other users. Use the appropriate routes to access these functionalities.
+
+### Deployment
+
+<b>For deployment in a production environment, ensure the following:</b>
+
+1. Set `debug` to `False` in the Flask app configuration.
+2. Secure your database and application environment with appropriate access controls and credentials.
+3. Consider deploying your Flask app on a platform like Heroku or PythonAnywhere for easier access from anywhere with an internet connection.
