@@ -2,7 +2,7 @@
 This is a Flask web application that serves as a clone of Netflix, allowing users to sign in, register, and access movies. 
 
 
-### Working
+## Netflix Clone Walkthrough: Exploring a Replica Streaming Service
 
 https://github.com/pavankumarmuppuri/Netflix-Clone/assets/155610590/5746a173-1385-43d3-8678-507ee38dbc74
 
